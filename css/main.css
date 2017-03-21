@@ -194,3 +194,42 @@ sidebar img {
   padding-left: 30px;
   margin-bottom: 10px;
 }
+
+/*--Contents--*/
+.article-content {
+  -webkit-columns: 250px 4;
+  -moz-columns: 250px 4;
+  columns: 250px 4;
+  column-gap: 26px;
+  column-fill: auto;
+  height:650px;
+}
+
+article h2 {
+font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+article h3, p {
+  font-size: 17px;
+  margin: 0px;
+}
+
+article span {
+  font-weight: bold;
+  color: orange;
+}
+
+article p {
+  line-height: 1.5em;
+  margin-bottom: 20px;
+}
+
+article {
+  padding-top: 25px;
+}
+
+article h2:first-of-type {
+  padding-top: 0px
+}
