@@ -1,28 +1,196 @@
-body {
-  margin: 0;
-  padding: 0;
+/*--Fonts--*/
+@import url('https://fonts.googleapis.com/css?family=Passion+One|Prata');
+@import url('https://fonts.googleapis.com/css?family=Secular+One');
+
+/*--Reset--*/
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote,
+a, article, figure, footer, header, menu, nav, {
+	margin: 0;
+	padding: 0;
 }
 
+/*--Body--*/
+
 body {
-  margin: 50px;
+  margin: 50px auto;
+  padding: 5px 80px;
+}
+
+h1 {
+  font-family: 'Passion One', cursive;
+  font-size: 12em;
+  margin: 5px;
+  padding-bottom: -30px;
+  transform: translateY (-52px);
+}
+
+h2 {
+  font-family: 'Prata', serif;
+  font-size: 50px;
 }
 
 h3 {
   font-size: 1.5em;
 }
 
-header span:before {
-  content: '/';
-  font-size: 20px;
-  margin: 10px;
+p {
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-header h3:after {
+/*--Header--*/
+
+header {
+  overflow: hidden;
+}
+
+header h2 {
+  font-family: 'Prata', serif;
+  font-size: 50px;
+  padding-left: 10%;
+  color: darkgray;
+  margin-bottom: -2%;
+}
+
+header h3 {
+  font-size: 1.5em;
+}
+
+header p {
+  font-size: 1em;
+  font-style: italic;
+  padding-top: 10px;
+  padding-left: 10%;
+}
+
+header h3 span:before {
+  content: '';
+  border-left: solid 2px teal;
+  transform: rotate(20deg) translateX(-10px) translateY(10px);
+  position: absolute;
+  width: 20px;
+  height: 25px;
+}
+
+header h3 span:after {
   content: '';
   border: solid 5px black;
+  width: 9999px;
+  position: absolute;
+  margin-left: 5px;
+  top: 13px
+}
+
+header h3 span {
+  color: teal;
+  font-weight: 100;
+  position: relative;
+  padding-left: 20px;
+}
+
+/*--Top Section--*/
+
+#issue {
+  font-family: 'Secular One', sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: gray;
+  transform: translateY(-102px);
+  padding-top: 10%;
+  padding-left: 30%;
+  letter-spacing: 3px;
+}
+
+#issue span:before {
+  content:'';
+  width: 20px;
+  height: 30px;
+  border-left: solid 1px darkgray;
+  position: absolute;
+  transform: translateX(-33px) translateY(-16.5px) rotate(-90deg)
+}
+
+#top {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
 }
 
-header span {
-  color: teal;
+#top figure {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#topimages {
+  display: flex;
+  margin: 0;
+}
+
+/*--Sidebar Area--*/
+
+#sidebar-box {
+  height: 560px;
+  width: 200px;
+  background-color: #adf442;
+  border: solid 1px black;
+  position: relative;
+}
+
+#sidebar-title {
+  display: flex;
+}
+
+#sidebar-content {
+  width: 130px;
+  padding-left: 20px;
+  font-side: 12px;
+  light-height: 1em;
+}
+
+#sidebar-author {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100px;
+}
+
+#sidebar-large-number {
+  font-size: 25px;
+  font-color: orange;
+  width: 50px;
+  margin-top: -6px;
+  padding-left: 30px;
+}
+
+sidebar #sidebar-box:before {
+  content:'';
+  height: 540px;
+  width: 180px;
+  border: solid 10px white;
+  position: absolute;
+}
+
+sidebar #sidebar-box span {
+  height: 20px;
+  width: 40px;
+  background-color: teal;
+  color: white;
+  padding-top: 5px;
+  padding-left: 12px;
+  margin: -25px -1px;
+  font-size: 14px;
+  text-transform: uppercase;
+  position: absolute;
+}
+
+sidebar h2 {
+  font-size: 24px;
+  margin-top:-5px;
+}
+
+sidebar img {
+  padding-top: 30px;
+  padding-left: 30px;
+  margin-bottom: 10px;
 }
